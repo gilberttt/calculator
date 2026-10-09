@@ -1,0 +1,24 @@
+NBG TAKEOFF TOOL EXTERNAL DESIGN HANDOFF
+
+CONTENTS
+- Tools/NbgTakeoffTool/docs/NBG_Takeoff_Tool_Design_Handoff.docx: design brief and requested third-party deliverables.
+- Tools/NbgTakeoffTool/: standalone proof of concept source, bundled browser libraries, configuration, tests, and project notes.
+
+RUN THE PROOF OF CONCEPT
+1. Install Node.js 24 or newer.
+2. Open a terminal in Tools/NbgTakeoffTool.
+3. Run: node server.mjs
+4. Open: http://127.0.0.1:3000
+5. Stop the server with Ctrl+C.
+
+The app's browser code and bundled libraries are included. npm install is not required to run the proof of concept. npm ci --ignore-scripts is only needed for the automated tests and development scripts described in README.md.
+
+WHERE TO START
+1. Read docs/NBG_Takeoff_Tool_Design_Handoff.docx.
+2. Read README.md for the workflow and product boundaries.
+3. Read docs/CALCULATIONS.md for the implemented formulas and quantity rules.
+4. Read docs/ARCHITECTURE.md for application state and workbook import/export.
+5. Use tests/ as executable examples of expected calculation behavior.
+
+DATA AND STATUS
+The proof of concept calculates in the browser. It has no job upload endpoint, database, account system, or automatic cloud save. Exported Excel workbooks contain job inputs and overrides; handle them as project data. This is an estimating proof of concept, not an engineering or production approval. Review SECURITY.md for the documented dependency finding and other limits before any deployment or operational use.
