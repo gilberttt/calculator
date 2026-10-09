@@ -25,3 +25,9 @@ button,input,select{background:#162636;border-color:#3c5267;color:#e1ebf4}button
 #high-eave-value:disabled{opacity:.45;cursor:not-allowed}
 
 .roof-shape-field{margin-bottom:14px}.roof-shape-field select{height:42px}
+
+/* Readability: set text color on body so a host page's default (black) cannot override the dark theme. */
+html{background:#0c141e}html body{color:#dce7f0;background:#0c141e}
+h1,h2,h3,summary,strong,td{color:#e0ebf4}
+.input-section h2>span,.unit-input>span{color:#9ab0c4}
+.topbar .primary{background:#1f6f9f;border-color:#3798ce}
